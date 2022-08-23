@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="title">회원가입</h1>
+
+    <!-- auth관련 api 짜두기 -->
+    <form action="/api/auth/register" method="post">
+        <p>
+            <label for="email">이메일</label>
+            <input type="email" name="email" id="email">
+        </p>
+        <p>
+            <label for="password">비번</label>
+            <input type="password" name="password" id="password">
+        </p>
+        <p>
+            <label for="userName">이름</label>
+            <input type="text" name="userName" id="userName">
+        </p>
+        <p>
+            <label for="phoneNum">폰번</label>
+            <input type="text" name="phoneNum" id="phoneNum">
+        </p>
+        <p>
+            <label for="address">address</label>
+            <input type="text" name="address" id="address">
+        </p>
+        <p>
+            <label for="bank">bank</label>
+            <input type="text" name="bank" id="bank">
+        </p>
+        <p>
+            <label for="accountNum">accountNum</label>
+            <input type="text" name="accountNum" id="accountNum">
+        </p>
+        <p>
+            <input type="submit" value="회원가입">
+        </p>
+    </form>
+</body>
+</html>
