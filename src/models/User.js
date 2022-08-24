@@ -51,7 +51,7 @@ const userSchema = new mongoose.Schema(
         timestamps : true,
     }
 )
-// bcrypt로 암호화
+// bcrypt로 암호화 
 userSchema.pre('save', async function(next) {
   const salt = await bcrypt.genSalt(10); // Recommended in bcryptjs doc
   this.password = await bcrypt.hash(this.password, salt);

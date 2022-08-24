@@ -14,5 +14,9 @@ module.exports = () => {
         res.render('./users/register.ejs');
     })
 
+    // 3. 로그인 페이지
+    router.get('/login/index', async(req,res) => {
+        res.render('./users/login.ejs');
+    })
     return router; // 이 함수를 호출하면 router가 됨.
 }

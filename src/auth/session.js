@@ -11,6 +11,8 @@ module.exports = (app) => {
         saveUninitialized : false,
         store : new FileStore(), 
     }))
+
+    return session;
 }
 
 // 위에서 함수 선언문을 만들어서 이름으로 module.exports를 해도되고,
